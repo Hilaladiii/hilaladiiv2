@@ -25,7 +25,7 @@ export const TECHICON = [
   { icon: <SiPrisma />, label: "Prisma", top: "70%", left: "60%" },
   { icon: <SiMysql />, label: "MySQL", top: "80%", left: "40%" },
   { icon: <SiJsonwebtokens />, label: "JWT", top: "90%", left: "10%" },
-  { icon: <SiVercel />, label: "Vercel", top: "15%", left: "590%" },
+  { icon: <SiVercel />, label: "Vercel", top: "4%", left: "59%" },
   { icon: <VscVscode />, label: "VSCode", top: "75%", left: "10%" },
   { icon: <SiJenkins />, label: "Jenkins", top: "35%", left: "30%" },
   { icon: <RiNextjsFill />, label: "Next.js", top: "40%", left: "60%" },

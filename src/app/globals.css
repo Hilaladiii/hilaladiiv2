@@ -23,6 +23,39 @@
   --color-gradientD: #43d9ad;
   --color-background: #010c15;
   --color-textwhite: #e5e9f0;
+
+  --animate-fadeUp: fadeUp 0.5s ease-in-out;
+  --animate-showUp: showUp 0.3s ease-in-out;
+  --animate-scaleUp: scaleUp 0.5s ease-in-out;
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(70px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes showUp {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }
 
 /*

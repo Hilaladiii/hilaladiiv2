@@ -2,7 +2,7 @@
 
 import Dot from "@/components/elements/Dot";
 import Typewriter from "@/components/fragments/Typewriter";
-import { TECHICON } from "@/constant";
+import { TECHICON } from "@/constant/tech-stack";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useRef } from "react";
@@ -31,21 +31,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <motion.div
-        initial={{
-          opacity: 0,
-          translateY: 50,
-        }}
-        animate={{
-          opacity: 1,
-          translateY: 1,
-        }}
-        transition={{
-          duration: 0.4,
-          ease: "easeInOut",
-        }}
-        className="relative flex gap-5 w-[800px] h-[490px] p-10 [background:linear-gradient(to_bottom,rgba(35,123,109,1),rgba(57,217,173,0.13))] rounded-lg border border-black"
-      >
+      <div className="animate-fadeUp relative flex gap-5 w-[800px] h-[490px] p-10 [background:linear-gradient(to_bottom,rgba(35,123,109,1),rgba(57,217,173,0.13))] rounded-lg border border-black">
         <Dot className="top-3 left-3" />
         <Dot className="top-3 right-3" />
         <Dot className="bottom-3 left-3" />
@@ -91,27 +77,15 @@ export default function Home() {
             next
           </Link>
         </div>
-      </motion.div>
+      </div>
 
-      <motion.div
+      <div
         id="blurry-blue"
-        initial={{ scale: 0.8 }}
-        animate={{ scale: 1 }}
-        transition={{
-          delay: 0.02,
-          duration: 0.5,
-        }}
-        className="size-[500px] absolute right-[6%] bottom-[9%] rounded-br-[50%] rotate-12 blur-3xl [background:radial-gradient(circle_at_center,#4D5BCE_10%,transparent_100%)] opacity-50 pointer-events-none"
+        className="animate-scaleUp size-[500px] absolute right-[6%] bottom-[9%] rounded-br-[50%] rotate-12 blur-3xl [background:radial-gradient(circle_at_center,#4D5BCE_10%,transparent_100%)] opacity-50 pointer-events-none"
       />
-      <motion.div
+      <div
         id="blurry-green"
-        initial={{ scale: 0.8 }}
-        animate={{ scale: 1 }}
-        transition={{
-          delay: 0.02,
-          duration: 0.5,
-        }}
-        className="size-[500px] absolute right-[30%] bottom-[22%] rounded-br-[50%] rotate-12 blur-3xl [background:radial-gradient(circle_at_center,#43D9AD_10%,transparent_100%)] opacity-40 pointer-events-none"
+        className="animate-scaleUp size-[500px] absolute right-[30%] bottom-[22%] rounded-br-[50%] rotate-12 blur-3xl [background:radial-gradient(circle_at_center,#43D9AD_10%,transparent_100%)] opacity-40 pointer-events-none"
       />
     </div>
   );
