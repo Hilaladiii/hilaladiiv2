@@ -9,8 +9,8 @@ import {
   SiMysql,
   SiJsonwebtokens,
   SiVercel,
-  SiFramer,
   SiJenkins,
+  SiMongodb,
 } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
@@ -29,7 +29,7 @@ export const TECHICON = [
   { icon: <VscVscode />, label: "VSCode", top: "75%", left: "10%" },
   { icon: <SiJenkins />, label: "Jenkins", top: "35%", left: "30%" },
   { icon: <RiNextjsFill />, label: "Next.js", top: "40%", left: "60%" },
-  { icon: <SiFramer />, label: "Framer Motion", top: "20%", left: "6%" },
+  { icon: <SiMongodb />, label: "MongoDB", top: "20%", left: "6%" },
   {
     icon: <RiTailwindCssFill />,
     label: "Tailwind CSS",
