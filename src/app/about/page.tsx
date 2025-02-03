@@ -21,7 +21,7 @@ export default function AboutPage() {
           style={atomOneDark}
           customStyle={{
             background: "transparent",
-            fontSize: "14px",
+            fontSize: "16px",
           }}
           showInlineLineNumbers
           showLineNumbers
