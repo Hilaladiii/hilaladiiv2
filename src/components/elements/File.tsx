@@ -1,9 +1,23 @@
+import { cn } from "@/utils/cn";
 import { SiTypescript } from "react-icons/si";
-export default function File({ name }: { name: string }) {
+
+interface IFile {
+  name: string;
+  onClick?: () => void;
+  isActive?: boolean;
+}
+
+export default function File({ name, onClick, isActive = false }: IFile) {
   return (
-    <div className="animate-showUp inline-flex items-center gap-2 text-secondary6/40 hover:text-secondary6 px-5 py-1 cursor-pointer">
+    <button
+      onClick={onClick}
+      className={cn(
+        "animate-showUp inline-flex items-center gap-2 text-secondary6/40 hover:text-secondary6 px-5 py-1 cursor-pointer",
+        isActive && "text-white"
+      )}
+    >
       <SiTypescript />
       <span>{name}</span>
-    </div>
+    </button>
   );
 }

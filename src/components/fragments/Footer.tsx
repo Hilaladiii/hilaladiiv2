@@ -5,12 +5,14 @@ export default function Footer() {
       <div className="flex items-center">
         <div className="border-r border-lines py-3 px-8">Find me in:</div>
         <a
+          target="_blank"
           href="https://instagram.com/hilal.adii"
           className="border-r border-lines py-3 px-5 hover:bg-white/10 hover:text-white transition"
         >
           <FaInstagram size={25} />
         </a>
         <a
+          target="_blank"
           href="https://linkedin.com/in/abdullah-hilal-adi-sumarno-790841246"
           className="border-r border-lines py-3 px-5 hover:bg-white/10 hover:text-white transition"
         >
@@ -18,6 +20,7 @@ export default function Footer() {
         </a>
       </div>
       <a
+        target="_blank"
         href="https://github.com/Hilaladiii"
         className="flex items-center gap-3 relative border-l border-lines py-3 px-5 hover:bg-white/10 hover:text-white transition"
       >

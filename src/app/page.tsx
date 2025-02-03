@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { useRef } from "react";
 
-const texts = ["Frontend Developer", "Chill Guy :)"];
+const texts = ["Fullstack Developer", "Chill Guy :)"];
 
 export default function Home() {
   const constrainRef = useRef(null);
@@ -23,6 +23,7 @@ export default function Home() {
             <span className="text-secondaryE">const</span>{" "}
             <span className="text-accentD">githubLink =</span>{" "}
             <a
+              target="_blank"
               href="https://github.com/Hilaladiii"
               className="text-accent7 underline"
             >

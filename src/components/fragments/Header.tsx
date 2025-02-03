@@ -21,7 +21,6 @@ const NAVIGATIONS = [
 
 export default function Header() {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <header className="text-label flex justify-between text-secondary6 border-b border-lines ">
       <div className="flex">
