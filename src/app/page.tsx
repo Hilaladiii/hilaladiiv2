@@ -82,11 +82,11 @@ export default function Home() {
 
       <div
         id="blurry-blue"
-        className="animate-scaleUp size-[500px] absolute right-[6%] bottom-[9%] rounded-br-[50%] rotate-12 blur-3xl [background:radial-gradient(circle_at_center,#4D5BCE_10%,transparent_100%)] opacity-50 pointer-events-none"
+        className="animate-scaleUp size-[500px] absolute right-[6%] bottom-[9%] rounded-br-[50%] rotate-12 blur-3xl [background:radial-gradient(circle_at_center,#4D5BCE_10%,transparent_100%)] opacity-30 pointer-events-none"
       />
       <div
         id="blurry-green"
-        className="animate-scaleUp size-[500px] absolute right-[30%] bottom-[22%] rounded-br-[50%] rotate-12 blur-3xl [background:radial-gradient(circle_at_center,#43D9AD_10%,transparent_100%)] opacity-40 pointer-events-none"
+        className="animate-scaleUp size-[500px] absolute right-[30%] bottom-[22%] rounded-br-[50%] rotate-12 blur-3xl [background:radial-gradient(circle_at_center,#43D9AD_10%,transparent_100%)] opacity-30 pointer-events-none"
       />
     </div>
   );
