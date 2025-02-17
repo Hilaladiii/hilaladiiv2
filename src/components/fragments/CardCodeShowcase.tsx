@@ -1,0 +1,57 @@
+import Image from "next/image";
+import Profile from "@/assets/profile.jpeg";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
+interface ICardCodeShowcase {
+  content: string;
+  animationDuration: number;
+}
+
+export default function CardCodeShowcase({
+  content,
+  animationDuration,
+}: ICardCodeShowcase) {
+  return (
+    <div
+      className="animate-fadeDown opacity-0"
+      style={{
+        animationDelay: `${animationDuration}s`,
+        animationFillMode: "forwards",
+      }}
+    >
+      <div className="flex gap-3 mb-2">
+        <Image
+          src={Profile}
+          alt="profile image"
+          className="size-9 rounded-full"
+        />
+        <div>
+          <p className="font-bold text-purple ">@Hilaladiii</p>
+          <p className="text-secondary6 text-xs">Created 1 month ago</p>
+        </div>
+      </div>
+      <div className="bg-primary1 border border-lines px-8 py-6 rounded-lg">
+        <SyntaxHighlighter
+          language="javascript"
+          style={atomOneDark}
+          customStyle={{
+            background: "transparent",
+            fontSize: "12px",
+          }}
+          showInlineLineNumbers
+          showLineNumbers
+          lineNumberStyle={{
+            color: "#6272a4",
+            marginRight: "8px",
+            fontSize: "12px",
+          }}
+          wrapLongLines
+          className="rounded-md bg-transparent animate-showUp"
+        >
+          {content}
+        </SyntaxHighlighter>
+      </div>
+    </div>
+  );
+}
