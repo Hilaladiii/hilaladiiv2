@@ -31,19 +31,12 @@ export default function CardCodeShowcase({
           <p className="text-secondary6 text-xs">Created 1 month ago</p>
         </div>
       </div>
-      <div className="bg-primary1 border border-lines px-8 py-6 rounded-lg">
+      <div className="bg-primary1 border border-lines px-5 py-3 rounded-lg">
         <SyntaxHighlighter
           language="javascript"
           style={atomOneDark}
           customStyle={{
             background: "transparent",
-            fontSize: "12px",
-          }}
-          showInlineLineNumbers
-          showLineNumbers
-          lineNumberStyle={{
-            color: "#6272a4",
-            marginRight: "8px",
             fontSize: "12px",
           }}
           wrapLongLines
