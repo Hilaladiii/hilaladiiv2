@@ -23,8 +23,10 @@
   --color-gradientD: #43d9ad;
   --color-background: #010c15;
   --color-textwhite: #e5e9f0;
+  --color-purple: #5565e8;
 
   --animate-fadeUp: fadeUp 0.5s ease-in-out;
+  --animate-fadeDown: fadeDown 0.5s ease-in-out;
   --animate-showUp: showUp 0.3s ease-in-out;
   --animate-scaleUp: scaleUp 0.5s ease-in-out;
 
@@ -32,6 +34,17 @@
     0% {
       opacity: 0;
       transform: translateY(70px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
     }
     100% {
       opacity: 1;
@@ -56,6 +69,29 @@
       transform: scale(1);
     }
   }
+}
+
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #607b96 transparent;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 3px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #607b96;
+  border-radius: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #607b96;
 }
 
 /*
