@@ -14,3 +14,11 @@ model Project {
   demoUrl String
   githubUrl String
 }
+
+model Message {
+  id String @id @default(auto()) @db.ObjectId @map("_id")
+  name String
+  email String 
+  message String
+  date DateTime? @default(now())
+}
