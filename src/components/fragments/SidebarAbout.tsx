@@ -26,7 +26,7 @@ const subsectionFiles = {
   ],
 };
 
-export default function SideBar() {
+export default function SideBarAbout() {
   const {
     setActiveSection,
     setActiveSubSection,
