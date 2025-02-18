@@ -1,7 +1,12 @@
+import TabProject from "@/components/fragments/TabProject";
+import { Suspense } from "react";
+
 export default function ProjectPage() {
   return (
-    <div className="h-full text-accentD flex items-center justify-center text-body">
-      Under construction will be completed as soon as possible
+    <div className="h-full w-full">
+      <Suspense>
+        <TabProject />
+      </Suspense>
     </div>
   );
 }
