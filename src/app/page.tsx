@@ -1,5 +1,6 @@
 "use client";
 
+import Blurry from "@/components/elements/Blurry";
 import Dot from "@/components/elements/Dot";
 import Typewriter from "@/components/fragments/Typewriter";
 import { TECHICON } from "@/constant/tech-stack";
@@ -79,15 +80,8 @@ export default function Home() {
           </Link>
         </div>
       </div>
-
-      <div
-        id="blurry-blue"
-        className="animate-scaleUp size-[500px] absolute right-[6%] bottom-[9%] rounded-br-[50%] rotate-12 blur-3xl [background:radial-gradient(circle_at_center,#4D5BCE_10%,transparent_100%)] opacity-30 pointer-events-none"
-      />
-      <div
-        id="blurry-green"
-        className="animate-scaleUp size-[500px] absolute right-[30%] bottom-[22%] rounded-br-[50%] rotate-12 blur-3xl [background:radial-gradient(circle_at_center,#43D9AD_10%,transparent_100%)] opacity-30 pointer-events-none"
-      />
+      <Blurry className="right-[6%] bottom-[9%] [background:radial-gradient(circle_at_center,#4D5BCE_10%,transparent_100%)]" />
+      <Blurry className="right-[30%] bottom-[22%] [background:radial-gradient(circle_at_center,#43D9AD_10%,transparent_100%)]" />
     </div>
   );
 }
