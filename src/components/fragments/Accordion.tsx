@@ -17,7 +17,7 @@ export default function Accordion({
   onClick,
 }: AccordionProps) {
   return (
-    <div className="border-b border-lines overflow-hidden">
+    <div className="border-b border-lines overflow-hidden animate-showUp">
       <button
         className="w-full flex gap-2 items-center px-4 py-3  text-white text-sm"
         onClick={onClick}

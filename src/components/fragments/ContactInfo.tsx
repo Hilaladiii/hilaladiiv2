@@ -50,7 +50,7 @@ export default function ContactInfo() {
   };
 
   return (
-    <div className="h-full w-[289px] border-r border-lines">
+    <div className="h-full w-[351px] border-r border-lines">
       {CONTACT_DATA.map((item, index) => (
         <Accordion
           key={index}
