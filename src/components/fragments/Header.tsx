@@ -34,7 +34,8 @@ export default function Header() {
               key={index}
               className={cn(
                 "flex items-center gap-3 px-8 py-3 border-r border-lines hover:bg-white/10 hover:text-white transition",
-                pathname == navigation.href && "border-b border-b-accentF"
+                pathname == navigation.href &&
+                  "border-b border-b-accentF text-white"
               )}
             >
               {navigation.label}
@@ -46,7 +47,7 @@ export default function Header() {
         href="/contact"
         className={cn(
           "flex gap-3 items-center px-8 py-3 border-l border-lines hover:bg-white/10 hover:text-white transition",
-          pathname == "/contact" && "border-b border-b-accentF"
+          pathname == "/contact" && "border-b border-b-accentF text-white"
         )}
       >
         _contact-me
