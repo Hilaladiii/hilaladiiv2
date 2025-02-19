@@ -11,11 +11,11 @@ export default function ProjectPage() {
       <Suspense>
         <TabProject />
       </Suspense>
-      <div className="lg:mt-10 p-5 lg:px-5">
+      <div className="lg:mt-10 ">
         <Suspense>
           <FilterProjectMobile />
         </Suspense>
-        <div className="max-sm:my-3 w-full flex flex-wrap items-center justify-center gap-4 overflow-y-auto lg:h-[550px] custom-scroll">
+        <div className="max-sm:my-3 p-3 lg:px-5  w-full flex flex-wrap items-center justify-center gap-4 overflow-y-auto lg:h-[550px] custom-scroll">
           <CardProject></CardProject>
           <CardProject></CardProject>
           <CardProject></CardProject>

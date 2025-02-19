@@ -12,8 +12,8 @@ export default function FilterProjectMobile() {
 
   return (
     <div className="lg:hidden">
-      <h1 className="text-white text-base mb-5">_projects</h1>
-      <div className="flex flex-col gap-4 animate-showUp">
+      <h1 className="text-white text-base p-5">_projects</h1>
+      <div className="w-full flex flex-col gap-4 animate-showUp">
         <Accordion
           title="projects"
           content={
@@ -36,7 +36,7 @@ export default function FilterProjectMobile() {
           onClick={() => setIsOpen((prev) => !prev)}
         />
       </div>
-      <div className="mt-5">
+      <div className="mt-5 px-5">
         <span className="text-white font-semibold">Project</span>
         <span className="text-secondary6 mx-2">/</span>
         {activeFilters.length > 0 ? (

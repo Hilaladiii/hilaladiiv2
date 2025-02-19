@@ -20,8 +20,8 @@ export default function AccordionAboutMobile() {
     );
   };
   return (
-    <div className="p-5 lg:hidden">
-      <h1 className="text-white text-base mb-5">_about-me</h1>
+    <div className="lg:hidden">
+      <h1 className="text-white text-base p-5">_about-me</h1>
       {Object.entries(SUB_SECTION_FILES).map(([sectionKey, files], index) => (
         <div className="mt-1" key={index}>
           <Accordion

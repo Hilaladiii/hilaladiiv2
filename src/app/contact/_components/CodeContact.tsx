@@ -21,7 +21,7 @@ button.addEventListener ( 'click' ), () => {
 })`;
 
   return (
-    <div className="w-1/2 h-full flex justify-center items-center">
+    <div className="max-sm:hidden w-1/2 h-full flex justify-center items-center">
       <SyntaxHighlighter
         language="javascript"
         style={atomOneDark}
