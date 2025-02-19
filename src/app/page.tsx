@@ -14,11 +14,11 @@ export default function Home() {
   const constrainRef = useRef(null);
   return (
     <div className="flex items-center justify-center h-full gap-32 overflow-hidden">
-      <div className="text-textwhite">
-        <div className="text-body">Hi all, I am</div>
-        <div className="text-headline">Abdullah Hilal</div>
+      <div className="text-textwhite max-sm:px-4 max-sm:mt-10">
+        <div className="text-body ">Hi all, I am</div>
+        <div className="text-6xl lg:text-headline my-1.5">Abdullah Hilal</div>
         <Typewriter texts={texts} />
-        <div className="flex flex-col  mt-16">
+        <div className="flex flex-col mt-12  lg:mt-16">
           <div>{"// Lorem ipsum dolor sit amet!"}</div>
           <div>
             <span className="text-secondaryE">const</span>{" "}
@@ -33,7 +33,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="animate-fadeUp relative flex gap-5 w-[800px] h-[490px] p-10 [background:linear-gradient(to_bottom,rgba(35,123,109,1),rgba(57,217,173,0.13))] rounded-lg border border-black">
+      <div className="max-sm:hidden animate-fadeUp relative flex gap-5 w-[800px] h-[490px] p-10 [background:linear-gradient(to_bottom,rgba(35,123,109,1),rgba(57,217,173,0.13))] rounded-lg border border-black">
         <Dot className="top-3 left-3" />
         <Dot className="top-3 right-3" />
         <Dot className="bottom-3 left-3" />

@@ -23,7 +23,7 @@ export default function Typewriter({ texts }: { texts: string[] }) {
   }, [texts.length]);
 
   return (
-    <div className="text-subheadline text-secondaryE font-medium">
+    <div className="text-xl lg:text-subheadline text-secondaryE font-medium">
       <AnimatePresence mode="wait">
         {isVisible && (
           <motion.div

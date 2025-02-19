@@ -9,6 +9,7 @@ export type Message = {
 export interface MessageSlice {
   message: Message;
   setMessage: (key: keyof Message, value: string) => void;
+  resetMessage: () => void;
 }
 
 const defaultMessage = {
@@ -21,4 +22,5 @@ export const createMessageSlice: StateCreator<MessageSlice> = (set) => ({
   message: defaultMessage,
   setMessage: (key, value) =>
     set((state) => ({ message: { ...state.message, [key]: value } })),
+  resetMessage: () => set(() => ({ message: defaultMessage })),
 });

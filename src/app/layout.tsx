@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${firaCode.className} antialiased bg-background p-8 h-screen `}
+        className={`${firaCode.className} w-screen antialiased bg-background lg:p-8 h-screen `}
       >
         <MainLayout>{children}</MainLayout>
       </body>
