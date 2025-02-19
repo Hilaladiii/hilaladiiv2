@@ -17,7 +17,7 @@ export default function File({ name, onClick, isActive = false }: IFile) {
       )}
     >
       <SiTypescript />
-      <span>{name}</span>
+      <span className="text-sm lg:text-base">{name}</span>
     </button>
   );
 }

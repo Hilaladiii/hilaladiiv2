@@ -17,9 +17,9 @@ export default function Accordion({
   onClick,
 }: AccordionProps) {
   return (
-    <div className="border-b border-lines overflow-hidden animate-showUp">
+    <div className="lg:border-b border-lines overflow-hidden animate-showUp">
       <button
-        className="w-full flex gap-2 items-center px-4 py-3  text-white text-sm"
+        className="bg-white/10 lg:bg-transparent w-full flex gap-2 items-center px-3 py-1 rounded-xs  lg:px-4 lg:py-3  text-white text-sm"
         onClick={onClick}
       >
         <MdOutlineArrowDropDown

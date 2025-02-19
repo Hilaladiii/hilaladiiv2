@@ -13,7 +13,7 @@ const texts = ["Fullstack Developer", "Chill Guy :)"];
 export default function Home() {
   const constrainRef = useRef(null);
   return (
-    <div className="flex items-center justify-center h-full gap-32 overflow-hidden">
+    <div className="flex items-center justify-center h-screen lg:h-full gap-32 overflow-hidden">
       <div className="text-textwhite max-sm:px-4 max-sm:mt-10">
         <div className="text-body ">Hi all, I am</div>
         <div className="text-6xl lg:text-headline my-1.5">Abdullah Hilal</div>

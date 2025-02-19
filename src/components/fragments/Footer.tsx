@@ -28,7 +28,7 @@ export default function Footer() {
       <a
         target="_blank"
         href="https://github.com/Hilaladiii"
-        className="flex items-center gap-3 relative max-sm:border-none border-l border-lines py-3 px-5 hover:bg-white/10 hover:text-white transition"
+        className="flex items-center gap-3 max-sm:border-none border-l border-lines py-3 px-5 hover:bg-white/10 hover:text-white transition"
       >
         {isMobile ? null : "@Hilaladiii"}
         <FaGithub size={25} />

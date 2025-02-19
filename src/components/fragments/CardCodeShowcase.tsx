@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Profile from "@/assets/profile.jpeg";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { useMobile } from "@/hooks/useMobile";
 
 interface ICardCodeShowcase {
   content: string;
@@ -12,6 +15,7 @@ export default function CardCodeShowcase({
   content,
   animationDuration,
 }: ICardCodeShowcase) {
+  const { isMobile } = useMobile();
   return (
     <div
       className="animate-fadeDown opacity-0"
@@ -37,7 +41,10 @@ export default function CardCodeShowcase({
           style={atomOneDark}
           customStyle={{
             background: "transparent",
-            fontSize: "12px",
+            fontSize: isMobile ? "12px" : "16px",
+            whiteSpace: "pre-wrap",
+            overflowX: "auto",
+            maxWidth: "100%",
           }}
           wrapLongLines
           className="rounded-md bg-transparent animate-showUp"

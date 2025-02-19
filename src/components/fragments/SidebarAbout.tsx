@@ -7,24 +7,7 @@ import File from "../elements/File";
 import { useStore } from "@/stores/store";
 import { cn } from "@/utils/cn";
 import { Subsection } from "@/stores/slices/section-slice";
-
-const subsectionFiles = {
-  "professional-info": [
-    { name: "experience.ts", key: "experience" },
-    { name: "hard-skills.ts", key: "hard-skills" },
-    { name: "soft-skills.ts", key: "soft-skills" },
-  ],
-  "personal-info": [
-    { name: "bio.ts", key: "bio" },
-    { name: "interest.ts", key: "interest" },
-    { name: "education.ts", key: "education" },
-    { name: "contacts.ts", key: "contact" },
-  ],
-  "hobbies-info": [
-    { name: "sports.ts", key: "sports" },
-    { name: "favorite-games.ts", key: "favorite-games" },
-  ],
-};
+import { SUB_SECTION_FILES } from "@/constant/about";
 
 export default function SideBarAbout() {
   const {
@@ -35,7 +18,7 @@ export default function SideBarAbout() {
   } = useStore();
 
   return (
-    <div className="border-r border-lines absolute h-full left-0 flex">
+    <div className="max-sm:hidden border-r border-lines absolute h-full left-0 flex">
       <div className="animate-showUp flex flex-col gap-5 h-full border-r border-lines p-5">
         <button onClick={() => setActiveSection("professional-info")}>
           <label htmlFor="professional-info" className="sr-only">
@@ -82,7 +65,7 @@ export default function SideBarAbout() {
           <MdOutlineArrowDropDown size={20} />
           <span>{activeSection}</span>
         </div>
-        {subsectionFiles[activeSection]?.map(({ name, key }) => (
+        {SUB_SECTION_FILES[activeSection]?.map(({ name, key }) => (
           <File
             key={key}
             name={name}

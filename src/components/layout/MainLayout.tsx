@@ -9,7 +9,7 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-col bg-primary7 border border-lines rounded-md w-full h-full max-sm:m-3">
+    <div className="flex flex-col border border-lines rounded-md w-full h-full max-sm:m-3">
       <HeaderDynamic />
       {children}
       <FooterDynamic />
