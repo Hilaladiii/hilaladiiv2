@@ -1,4 +1,4 @@
-import { cn } from "@/utils/cn";
+import { cn } from "@/shared/utils/cn";
 import { ButtonHTMLAttributes } from "react";
 
 interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {

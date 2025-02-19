@@ -1,6 +1,6 @@
-import CodeContact from "@/components/fragments/CodeContact";
-import ContactInfo from "@/components/fragments/ContactInfo";
-import FormContact from "@/components/fragments/FormContact";
+import CodeContact from "./_components/CodeContact";
+import ContactInfo from "./_components/ContactInfo";
+import FormContact from "./_components/FormContact";
 
 export default function ContactPage() {
   return (

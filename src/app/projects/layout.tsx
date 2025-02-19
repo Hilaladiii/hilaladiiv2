@@ -1,10 +1,10 @@
-import SideBarProject from "@/components/fragments/SidebarProject";
+import SideBarProject from "@/app/projects/_components/SidebarProject";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="h-screen relative">
+    <div className="w-full h-full relative">
       <SideBarProject />
-      <div className="ml-72 h-full flex">{children}</div>
+      <div className="lg:ml-72 h-full">{children}</div>
     </div>
   );
 }

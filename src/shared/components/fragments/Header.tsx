@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/utils/cn";
+import { cn } from "@/shared/utils/cn";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";

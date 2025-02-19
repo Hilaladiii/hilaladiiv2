@@ -3,11 +3,11 @@
 import { PiTerminalWindowFill } from "react-icons/pi";
 import { RiUser4Fill, RiGamepadFill } from "react-icons/ri";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-import File from "../elements/File";
+import File from "../../../shared/components/elements/File";
 import { useStore } from "@/stores/store";
-import { cn } from "@/utils/cn";
+import { cn } from "@/shared/utils/cn";
 import { Subsection } from "@/stores/slices/section-slice";
-import { SUB_SECTION_FILES } from "@/constant/about";
+import { SUB_SECTION_FILES } from "@/shared/constant/about";
 
 export default function SideBarAbout() {
   const {

@@ -3,11 +3,11 @@
 import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Input from "../elements/Input";
-import Button from "../elements/Button";
-import TextArea from "../elements/TextArea";
 import { useStore } from "@/stores/store";
 import { useState } from "react";
+import Button from "@/shared/components/elements/Button";
+import Input from "@/shared/components/elements/Input";
+import TextArea from "@/shared/components/elements/TextArea";
 
 const contactSchema = z.object({
   name: z.string().min(1, "Name required"),

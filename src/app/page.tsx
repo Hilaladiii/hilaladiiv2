@@ -1,9 +1,9 @@
 "use client";
 
-import Blurry from "@/components/elements/Blurry";
-import Dot from "@/components/elements/Dot";
-import Typewriter from "@/components/fragments/Typewriter";
-import { TECHICON } from "@/constant/tech-stack";
+import Blurry from "@/shared/components/elements/Blurry";
+import Dot from "@/shared/components/elements/Dot";
+import Typewriter from "@/shared/components/fragments/Typewriter";
+import { TECHICON } from "@/shared/constant/tech-stack";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useRef } from "react";

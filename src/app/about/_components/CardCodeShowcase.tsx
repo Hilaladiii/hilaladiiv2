@@ -4,7 +4,7 @@ import Image from "next/image";
 import Profile from "@/assets/profile.jpeg";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { useMobile } from "@/hooks/useMobile";
+import { useMobile } from "@/shared/hooks/useMobile";
 
 interface ICardCodeShowcase {
   content: string;

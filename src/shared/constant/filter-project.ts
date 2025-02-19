@@ -11,35 +11,35 @@ import { RiNextjsFill } from "react-icons/ri";
 
 export const FILTER_PROJECT_ITEM = [
   {
-    icon: <SiReact size={20} />,
+    icon: SiReact,
     name: "React",
   },
   {
-    icon: <RiNextjsFill size={20} />,
+    icon: RiNextjsFill,
     name: "Nextjs",
   },
   {
-    icon: <SiPrisma size={20} />,
+    icon: SiPrisma,
     name: "Prisma",
   },
   {
-    icon: <SiNestjs size={20} />,
+    icon: SiNestjs,
     name: "NestJS",
   },
   {
-    icon: <SiMysql size={20} />,
+    icon: SiMysql,
     name: "MySQL",
   },
   {
-    icon: <SiMongodb size={20} />,
+    icon: SiMongodb,
     name: "MongoDB",
   },
   {
-    icon: <SiJenkins size={20} />,
+    icon: SiJenkins,
     name: "Jenkins",
   },
   {
-    icon: <SiDocker size={20} />,
+    icon: SiDocker,
     name: "Docker",
   },
 ];

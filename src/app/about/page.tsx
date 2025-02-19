@@ -1,7 +1,7 @@
 "use client";
-import File from "@/components/elements/File";
-import { useAboutContent } from "@/hooks/useAboutContent";
-import { useMobile } from "@/hooks/useMobile";
+import File from "@/shared/components/elements/File";
+import { useAboutContent } from "@/shared/hooks/useAboutContent";
+import { useMobile } from "@/shared/hooks/useMobile";
 import { useStore } from "@/stores/store";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";

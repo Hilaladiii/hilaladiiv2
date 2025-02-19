@@ -1,5 +1,5 @@
-import CardCodeShowcase from "@/components/fragments/CardCodeShowcase";
-import { CODE_SHOWCASES } from "@/constant/code-showcase";
+import CardCodeShowcase from "@/app/about/_components/CardCodeShowcase";
+import { CODE_SHOWCASES } from "@/shared/constant/code-showcase";
 
 export default function ListCodeShowcase() {
   return (

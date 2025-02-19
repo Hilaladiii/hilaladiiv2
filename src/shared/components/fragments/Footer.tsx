@@ -1,6 +1,6 @@
 "use client";
 
-import { useMobile } from "@/hooks/useMobile";
+import { useMobile } from "@/shared/hooks/useMobile";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   const { isMobile } = useMobile();

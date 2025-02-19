@@ -8,7 +8,7 @@ import {
   INTEREST,
   SOFT_SKILLS,
   SPORTS,
-} from "@/constant/personal-info";
+} from "@/shared/constant/personal-info";
 import { useStore } from "@/stores/store";
 
 export function useAboutContent() {

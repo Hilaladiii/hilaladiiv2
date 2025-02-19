@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import TabProjectItem from "../elements/TabProjectItem";
+import TabProjectItem from "../../../shared/components/elements/TabProjectItem";
 
 export default function TabProject() {
   const searchParams = useSearchParams();
@@ -17,7 +17,7 @@ export default function TabProject() {
   };
 
   return (
-    <div className="text-secondary6 w-full border-b border-lines">
+    <div className="max-sm:hidden text-secondary6 w-full border-b border-lines">
       {dataFilters.length > 0 ? (
         dataFilters.map((data, index) => (
           <TabProjectItem

@@ -1,4 +1,4 @@
-import SideBarAbout from "@/components/fragments/SidebarAbout";
+import SideBarAbout from "@/app/about/_components/SidebarAbout";
 import ListCodeShowcase from "./_components/ListCodeShowcase";
 
 export default function Layout({ children }: { children: React.ReactNode }) {

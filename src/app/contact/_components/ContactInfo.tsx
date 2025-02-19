@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import Accordion from "./Accordion";
 
 import { MdEmail, MdOutlineWhatsapp } from "react-icons/md";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import ContactItem from "../elements/ContactItem";
+
+import Accordion from "@/shared/components/fragments/Accordion";
+import ContactItem from "@/shared/components/elements/ContactItem";
 
 const CONTACT_DATA = [
   {

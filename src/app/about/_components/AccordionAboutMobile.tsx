@@ -1,6 +1,6 @@
-import File from "@/components/elements/File";
-import Accordion from "@/components/fragments/Accordion";
-import { SUB_SECTION_FILES } from "@/constant/about";
+import File from "@/shared/components/elements/File";
+import Accordion from "@/shared/components/fragments/Accordion";
+import { SUB_SECTION_FILES } from "@/shared/constant/about";
 import { ActiveSection, Subsection } from "@/stores/slices/section-slice";
 import { useStore } from "@/stores/store";
 import { useState } from "react";
