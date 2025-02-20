@@ -14,6 +14,7 @@ The website design is adapted from Figma Community with some modifications based
 - TypeScript
 - Tailwind CSS
 - Motion
+- Zustand
 
 ## 🌍 Live Demo
 
