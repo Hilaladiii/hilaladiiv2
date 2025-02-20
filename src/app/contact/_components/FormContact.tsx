@@ -41,7 +41,7 @@ export default function FormContact() {
     });
   };
   return (
-    <div className="w-full px-3 lg:px-0 lg:w-1/2 items-center flex justify-center border-r border-lines max-sm:mb-10">
+    <div className="w-full h-full px-3 lg:px-0 lg:w-1/2 items-center flex justify-center border-r border-lines max-sm:mb-10">
       {showSuccess ? (
         <SuccessSendMessage onClick={() => setShowSuccess(false)} />
       ) : (
