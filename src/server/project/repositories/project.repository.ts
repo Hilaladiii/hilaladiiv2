@@ -2,21 +2,23 @@ import prisma from "@/shared/libs/prisma/prisma";
 import { TProjectQueryParam } from "../validations/project.validation";
 
 export const getAllProject = async (query: TProjectQueryParam) => {
-  const hasValidQuery = query && Array.isArray(query) && query.length > 0;
+  const filterArray = query ? (Array.isArray(query) ? query : [query]) : [];
+
   const projects = await prisma.project.findMany({
-    where: hasValidQuery
-      ? {
-          techstacks: {
-            some: {
-              techstack: {
-                name: {
-                  in: query,
+    where:
+      filterArray.length > 0
+        ? {
+            AND: filterArray.map((techName) => ({
+              techstacks: {
+                some: {
+                  techstack: {
+                    name: techName,
+                  },
                 },
               },
-            },
-          },
-        }
-      : {},
+            })),
+          }
+        : {},
     include: {
       techstacks: {
         select: {

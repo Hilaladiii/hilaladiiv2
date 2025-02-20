@@ -11,10 +11,9 @@ import CardProjectSkeleton from "./_components/SkeletonCardProject";
 type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
 export default function ProjectPage(props: { searchParams: SearchParams }) {
   const params = use(props.searchParams);
-  const filter = Array.isArray(params.filter) ? params.filter : undefined;
 
   const { data: projects, isLoading } = trpc.project.getAllProject.useQuery(
-    filter,
+    params.filter,
     {
       staleTime: 1000 * 60 * 5,
       refetchOnWindowFocus: false,
@@ -33,7 +32,7 @@ export default function ProjectPage(props: { searchParams: SearchParams }) {
         <Suspense>
           <FilterProjectMobile />
         </Suspense>
-        <div className="max-sm:my-3 p-3 lg:px-5 w-full flex flex-wrap items-center justify-center gap-4 overflow-y-auto lg:h-[550px] custom-scroll">
+        <div className="max-sm:my-3 p-3 lg:px-5 w-full h-full flex flex-wrap items-center justify-center gap-4 overflow-y-auto lg:h-[550px] custom-scroll">
           {isLoading ? (
             <>
               {[...Array(6)].map((_, index) => (
