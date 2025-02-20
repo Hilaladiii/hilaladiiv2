@@ -15,6 +15,10 @@ The website design is adapted from Figma Community with some modifications based
 - Tailwind CSS
 - Motion
 
+## 🌍 Live Demo
+
+Check out the live demo here: [hilaladiiv2.vercel.app](https://hilaladiiv2.vercel.app)
+
 ## 📌 How to Clone and Run the Project
 
 ### 1. Clone the Repository
