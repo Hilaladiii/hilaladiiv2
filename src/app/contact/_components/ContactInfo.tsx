@@ -51,9 +51,9 @@ export default function ContactInfo() {
   };
 
   return (
-    <div className="max-sm:mb-10">
+    <div className="max-sm:mb-10 ">
       <h1 className="lg:hidden text-white text-base p-5">_contact-me</h1>
-      <div className="h-full w-full lg:w-[351px] border-r border-lines flex flex-col gap-1 lg:gap-0">
+      <div className="h-full max-sm:w-full w-[289px] lg:border-r border-lines flex flex-col gap-1 lg:gap-0">
         {CONTACT_DATA.map((item, index) => (
           <Accordion
             key={index}

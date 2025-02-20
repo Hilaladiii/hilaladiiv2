@@ -27,7 +27,7 @@ export default function Accordion({
       )}
     >
       <button
-        className="bg-white/10 lg:bg-transparent w-full flex gap-2 items-center px-3 py-1 rounded-xs  lg:px-4 lg:py-3  text-white text-sm"
+        className="bg-white/10 lg:bg-transparent w-full flex gap-2 items-center px-3 py-1 lg:rounded-xs  lg:px-4 lg:py-3  text-white text-sm"
         onClick={onClick}
       >
         <MdOutlineArrowDropDown

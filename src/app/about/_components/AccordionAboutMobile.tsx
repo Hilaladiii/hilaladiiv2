@@ -46,7 +46,7 @@ export default function AccordionAboutMobile() {
           />
         </div>
       ))}
-      <div className="text-white text-sm mt-5 ">
+      <div className="text-white text-sm mt-5 px-5">
         <span className="text-white">- {activeSection}</span>
         <span className="text-secondary6">
           {"/"}

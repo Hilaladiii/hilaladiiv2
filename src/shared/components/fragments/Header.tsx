@@ -77,7 +77,7 @@ export default function Header() {
             animate={{ height: "auto" }}
             exit={{ height: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="absolute top-[53px] w-full h-fit bg-white/10 backdrop-blur-xl text-white border-t border-lines shadow-lg z-50 overflow-hidden"
+            className="absolute top-[53px] w-full h-fit bg-white/10 backdrop-blur-sm text-white border-t border-lines shadow-lg z-50 overflow-hidden"
           >
             <nav className="flex flex-col">
               {NAVIGATIONS.map((navigation, index) => (
