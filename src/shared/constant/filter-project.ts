@@ -1,10 +1,8 @@
 import {
   SiNestjs,
   SiReact,
-  SiDocker,
   SiPrisma,
   SiMysql,
-  SiJenkins,
   SiMongodb,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";

@@ -1,6 +1,6 @@
 export default function EmptyStateProject() {
   return (
-    <div>
+    <div className="h-full">
       <div className="text-center font-medium text-3xl text-secondary6 mb-4">
         X__X
       </div>

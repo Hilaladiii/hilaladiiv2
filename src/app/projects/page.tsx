@@ -3,16 +3,18 @@
 import CardProject from "@/app/projects/_components/CardProject";
 import FilterProjectMobile from "@/app/projects/_components/FilterProjectMobile";
 import TabProject from "@/app/projects/_components/TabProject";
-import { useFilter } from "@/shared/hooks/useFilter";
 import { trpc } from "@/shared/libs/trpc";
-import { Suspense } from "react";
+import { Suspense, use } from "react";
 import EmptyStateProject from "./_components/EmptyStateProject";
 import CardProjectSkeleton from "./_components/SkeletonCardProject";
 
-export default function ProjectPage() {
-  const { activeFilters } = useFilter();
+type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
+export default function ProjectPage(props: { searchParams: SearchParams }) {
+  const params = use(props.searchParams);
+  const filter = Array.isArray(params.filter) ? params.filter : undefined;
+
   const { data: projects, isLoading } = trpc.project.getAllProject.useQuery(
-    activeFilters,
+    filter,
     {
       staleTime: 1000 * 60 * 5,
       refetchOnWindowFocus: false,
