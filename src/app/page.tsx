@@ -2,6 +2,7 @@
 
 import Blurry from "@/shared/components/elements/Blurry";
 import Dot from "@/shared/components/elements/Dot";
+import DraggableTechIcon from "@/shared/components/elements/DragableTechIcon";
 import Typewriter from "@/shared/components/fragments/Typewriter";
 import { TECHICON } from "@/shared/constant/tech-stack";
 import { motion } from "motion/react";
@@ -43,21 +44,14 @@ export default function Home() {
           className="relative bg-[#011627] w-[500px] h-full rounded-sm"
         >
           {TECHICON.map((tech, index) => (
-            <motion.div
+            <DraggableTechIcon
               key={index}
-              className="cursor-grab inline-flex gap-2 items-center px-6 py-1.5 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full absolute"
-              drag
-              style={{
-                top: tech.top,
-                left: tech.left,
-              }}
-              dragConstraints={constrainRef}
-            >
-              <span>{tech.icon}</span>
-              <span className="text-xs font-medium text-gray-950">
-                {tech.label}
-              </span>
-            </motion.div>
+              icon={tech.icon}
+              label={tech.label}
+              top={tech.top}
+              left={tech.left}
+              constrainRef={constrainRef}
+            />
           ))}
         </motion.div>
         <div className="flex flex-col justify-between items-end">

@@ -34,12 +34,4 @@ export const FILTER_PROJECT_ITEM = [
     icon: SiMongodb,
     name: "MongoDB",
   },
-  {
-    icon: SiJenkins,
-    name: "Jenkins",
-  },
-  {
-    icon: SiDocker,
-    name: "Docker",
-  },
 ];

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import MainLayout from "@/shared/components/layout/MainLayout";
+import TrpcProvider from "@/shared/libs/trpc/Provider";
 
 const firaCode = Fira_Code({
   subsets: ["latin"],
@@ -26,7 +27,9 @@ export default function RootLayout({
       <body
         className={`${firaCode.className} w-full h-full lg:h-screen antialiased bg-background lg:p-8 `}
       >
-        <MainLayout>{children}</MainLayout>
+        <TrpcProvider>
+          <MainLayout>{children}</MainLayout>
+        </TrpcProvider>
       </body>
     </html>
   );

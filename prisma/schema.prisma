@@ -9,10 +9,33 @@ datasource db {
 
 model Project {
   id String @id @default(auto()) @db.ObjectId @map("_id")
-  imageUrl String
   name String
+  description String
+  imageUrl String
   demoUrl String
   githubUrl String
+
+  techstacks  ProjectTechstack[]
+
+  @@map("projects")
+}
+
+model Techstack{
+  id String @id @default(auto()) @db.ObjectId @map("_id")
+  name        String      @unique
+  projects    ProjectTechstack[]
+
+  @@map("techstacks")
+}
+
+model ProjectTechstack {
+  id  String   @id @default(auto()) @db.ObjectId @map("_id")
+  projectId  String @db.ObjectId
+  techstackId String @db.ObjectId
+  project  Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  techstack  Techstack @relation(fields: [techstackId], references: [id], onDelete: Cascade)
+
+  @@map("project_techstack")
 }
 
 model Message {
@@ -21,4 +44,6 @@ model Message {
   email String 
   message String
   date DateTime? @default(now())
+
+  @@map("messages")
 }
