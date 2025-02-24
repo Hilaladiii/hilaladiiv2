@@ -15,7 +15,7 @@ export default function ProjectPage(props: { searchParams: SearchParams }) {
   const { data: projects, isLoading } = trpc.project.getAllProject.useQuery(
     params.filter,
     {
-      staleTime: 1000 * 60 * 5,
+      staleTime: Infinity,
       refetchOnWindowFocus: false,
       refetchOnReconnect: false,
     }
