@@ -86,3 +86,10 @@ export const SOFT_SKILLS = `const soft_skills = [
     "Communication",
     "Problem Solving",
 ];`;
+
+export const DEVICE = `const device = {
+    name : "ASUS A45A",
+    processor : "Intel i3 Gen 2"
+    ram : "8GB",
+    ssd : "SAMSUNG SSD 256GB"
+}`;

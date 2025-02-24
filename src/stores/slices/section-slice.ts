@@ -7,7 +7,7 @@ export type ActiveSection =
 
 export type Subsection = {
   "professional-info": "experience" | "hard-skills" | "soft-skills";
-  "personal-info": "bio" | "interest" | "education" | "contact";
+  "personal-info": "bio" | "interest" | "education" | "contact" | "device";
   "hobbies-info": "sports" | "favorite-games";
 };
 

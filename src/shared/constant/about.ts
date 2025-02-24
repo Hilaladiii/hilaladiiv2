@@ -9,6 +9,7 @@ export const SUB_SECTION_FILES = {
     { name: "interest.ts", key: "interest" },
     { name: "education.ts", key: "education" },
     { name: "contacts.ts", key: "contact" },
+    { name: "device.ts", key: "device" },
   ],
   "hobbies-info": [
     { name: "sports.ts", key: "sports" },

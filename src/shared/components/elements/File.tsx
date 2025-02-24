@@ -12,7 +12,7 @@ export default function File({ name, onClick, isActive = false }: IFile) {
     <button
       onClick={onClick}
       className={cn(
-        "animate-showUp inline-flex items-center gap-2 text-secondary6/40 hover:text-secondary6 px-5 py-1 cursor-pointer",
+        "animate-showUp inline-flex items-center gap-2 text-secondary6/40 hover:text-secondary6 px-4 py-1 cursor-pointer",
         isActive && "text-white"
       )}
     >

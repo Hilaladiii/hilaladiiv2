@@ -1,6 +1,7 @@
 import {
   BIO,
   CONTACTS,
+  DEVICE,
   EDUCATION,
   EXPERIENCE,
   FAVORITE_GAMES,
@@ -34,6 +35,8 @@ export function useAboutContent() {
         return SOFT_SKILLS;
       case "experience":
         return EXPERIENCE;
+      case "device":
+        return DEVICE;
       default:
         return "// No content available;";
     }
